@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario League of Legends</title>
+    </head>
+    <body>
+        <h1>League of Legends</h1>
+        <h2>Encuesta sobre campeones</h2>
+        <p>Cuando aparece un * al lado de un campo es obligatio introducir un valor</p>
+        <form action="procesar_campeon.php" method="post" enctype="application/x-www-form-urlencoded">
+            <fieldset><legend>Datos Personales</legend>
+                <label for="nombre">Nombre *</label>
+                    <input name="nombre" type="text" maxlength="30" id="nombre" required autofocus />
+                <label for="apellidos">Apellidos *</label>
+                    <input name="apellidos" type="text" maxlength="50" id="apellidos" /><br/>
+                <label for="correo">Correo electrónico *</label>
+                    <input name="correo" type="email" maxlength="30" id="correo" />
+                <label for="ciudad">Ciudad</label>
+                    <input name="ciudad" type="text" maxlength="50" id="ciudad" /><br/>
+                
+            </fieldset>
+            <fieldset><legend>Selecciona tu campeón favorito</legend>
+                <label for="campeones">Campeones</label>
+                    <select name="campeon" id="campeon">
+                        <option value="ahri">Ahri</option>
+                        <option value="ak">Akali</option>
+                        <option value="zed">Zed</option>
+                        <option value="yas">Yasuo</option>
+                    </select>
+            </fieldset>
+            <fieldset><legend>¿Qué otros campeones estarías dispuesto a utilizar?</legend>
+                <label for="Darius">
+                    <input type="radio" name="opcampeon" value="Darius" id="Darius" checked />Darius
+                </label>
+                <label for="Irelia">
+                    <input type="radio" name="opcampeon" value="Irelia" id="Irelia" />Irelia
+                </label>
+                <label for="Nasus">
+                    <input type="radio" name="opcampeon" value="Nasus" id="Nasus" />Nasus
+                </label>
+
+            </fieldset>
+            <p><input type="submit" value="Escribir datos"/></p>
+        </form>
+    </body>
+</html>
