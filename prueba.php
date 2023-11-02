@@ -1,5 +1,5 @@
 <?php
 echo "Ingresa tu nombre: ";
-$nombre = fgets(STDIN);
+fscanf(STDIN, "%s", $nombre);
 echo "Hola, $nombre";
 ?>
