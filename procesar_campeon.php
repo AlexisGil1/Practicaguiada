@@ -12,5 +12,15 @@
             $apellidos = $_REQUEST['apellidos'];
             
             $campeon = $_POST['campeon'];
-            echo $campeon;
+            $otrocampeon = $_POST['opcampeon'];
+
             //Impresion de los datos recogidos
+            print ("<p>Los datos que se han introducido son:</p>\n");
+            print ("<ul>\n");
+            print ("<li> Nombre del usuario: $nombre \n");
+            print ("<li> Apellidos del usuario: $apellidos \n");
+            print ("<li> Campeón favorito: $campeon \n");
+            print ("<li> Otro campeón: $otrocampeon \n");
+
+            print ("</ul>\n");
+?>
