@@ -12,4 +12,5 @@
             $apellidos = $_REQUEST['apellidos'];
             
             $campeon = $_POST['campeon'];
+            echo $campeon;
             //Impresion de los datos recogidos
